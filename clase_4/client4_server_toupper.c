@@ -17,7 +17,6 @@ int main() {
     struct addrinfo *bind_address;
     getaddrinfo("127.0.0.1", "8081", &hints, &bind_address);
 
-
     printf("Creating socket...\n");
     int socket_listen;
     socket_listen = socket(bind_address->ai_family,

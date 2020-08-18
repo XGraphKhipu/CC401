@@ -25,6 +25,7 @@ int main(int argc, char *argv[]) {
     printf("Remote address is: ");
     char address_buffer[100];
     char service_buffer[100];
+
     getnameinfo(peer_address->ai_addr, peer_address->ai_addrlen,
             address_buffer, sizeof(address_buffer),
             service_buffer, sizeof(service_buffer),
